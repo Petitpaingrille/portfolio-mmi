@@ -1,0 +1,267 @@
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;  
+}
+
+*::selection{
+    color: #69ffeb;
+    background-color: #2196F3;
+}
+
+/* Navbar */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 20px 0px;
+    background-color: #2196F3;
+    border-radius: 0px 0px 20px 20px;
+}
+
+nav ul li{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .8s ease;
+}
+
+nav ul li a:hover{
+    color: #69ffeb;
+}
+
+/* Accueil */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 820px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('./Images/Home_cut.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    padding: 0px 20px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.headings{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/* Informations */
+#informations h1{
+    color: #2196F3;
+}
+
+#informations .container{
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+    background-color: #A3A3A3;
+    border-radius: 20px;
+}
+
+/* Ligne avec logo à gauche */
+#informations .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#informations .container .row i{
+    padding: 0px 10px 0px 15px;
+    margin: 0px 10px 0px 25px;
+    color: #69ffeb;
+    user-select: none;
+}
+
+#informations .container .row .row-content{
+    margin: 10px;
+    padding: 10px;
+}
+
+#informations .container .row .row-content .row-text{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20pt;
+    color: white;
+    padding: 0px 15px 15px 0px;
+}
+
+#informations .container .row .row-content .row-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26pt;
+    color: #69ffeb;
+    padding: 15px 0px;
+    user-select: none;
+}
+
+/* Ligne avec logo à droite */
+#informations .container .row-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#informations .container .row-right i{
+    padding: 0px 15px 0px 10px;
+    margin: 0px 25px 0px 10px;
+    color: #69ffeb;
+    user-select: none;
+}
+
+#informations .container .row-right .row-content{
+    margin: 10px 10px 10px 25px;
+    padding: 10px 10px 10px 15px;
+}
+
+#informations .container .row-right .row-content .row-text{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20pt;
+    color: white;
+    padding: 0px 15px 15px 0px;
+}
+
+#informations .container .row-right .row-content .row-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26pt;
+    color: #69ffeb;
+    padding: 15px 0px;
+    user-select: none;
+}
+
+/* Projets */
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h1{
+    color: #2196F3;
+}
+
+#projects .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin: 45px;
+}
+
+#projects .card{
+    height: 630px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 25px;
+    margin: 0px 5px;
+    text-align: left;
+    border: 1px solid #2196F3;
+    border-radius: 20px;
+    background: linear-gradient(to top, #2196F3 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s ease;
+}
+
+#projects .card:hover{
+    background-position: left bottom;
+    border: 1px solid #2196F3;
+    color: white;
+}
+
+#projects .card .card-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26pt;
+    padding: 15px 0px;
+    user-select: none;
+}
+
+#projects .card .card-text{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20pt;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+footer p{
+    background-color: #2196F3;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px 25px 20px 25px;
+}
+
+/* Couleurs */
+.base-color{
+    color: #2196F3;
+}
+
+.accent-color{
+    color: #69ffeb;
+}
+
+/* Paramètres */
+.no-select{
+    user-select: none;
+}
+
+/* TODO: Finir de compléter le site */
+/* Media query image home 1585px changer image pour image plus haute car width plus grande que l'image initiale */
